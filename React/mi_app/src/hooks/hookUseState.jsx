@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-const hookUseState = () => {
+const HookUseState = () => {
 
     
     const [estado, setEstado] = useState(0);
@@ -13,15 +13,26 @@ const hookUseState = () => {
             <span>{estado}</span>
             <div>
                 {/*Botón incrementar*/}
-                <button></button>
+                <button
+                    onClick={()=> setEstado( estado + 1) }>
+                    Aumentar
+                </button>
                 {/*Botón reiniciar*/}
-                <button></button>
+                <button
+                    onClick={()=> setEstado(0)}
+                >
+                    Restaurar
+                </button>
                 {/*Botón disminuir*/}
-                <button></button>
+                <button
+                    onClick={()=> setEstado( estado - 1)}
+                >
+                    Disminuir
+                </button>
             </div>
         
         </div>
     );
 }
 
-export default hookUseState;
+export default HookUseState;

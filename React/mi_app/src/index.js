@@ -19,7 +19,7 @@ import MiPrimeraVista from "./Vistas/MiPrimeraVista";
 import Componente1 from "./Vistas/Componente1";
 import Componente2 from "./Vistas/Componente2";
 import Saludos from './Vistas/Saludos';
-import hookUseState from './hooks/hookUseState';
+import HookUseState from "./hooks/HookUseState"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -34,7 +34,7 @@ root.render(
       <Route path="/componente2" element={<Componente2/>}/>
       <Route path="/mi-primera-vista" element={<MiPrimeraVista/>}/>
       <Route path="/saludos" element={<Saludos/>}/>
-      <Route path="/usestate" element={<hookUseState/>}/>
+      <Route path="/usestate" element={<HookUseState/>}/>
     </Routes>
   </BrowserRouter>
 );
